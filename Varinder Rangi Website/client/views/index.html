@@ -1,0 +1,1640 @@
+<html>
+<!-- Junaid Patel-->
+
+<head>
+    <title>Varinder Rangi SuperVisa Insurance </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Local style sheet -->
+    <link rel="stylesheet" href="styles\styles.css">
+    <!-- <link rel="stylesheet" href="http://www.varinderrangi.com/client/styles/styles.css"> -->
+    <!-- <link rel="stylesheet" href="http://www.varinderrangi.com/client/styles/bootstrap.css">
+    <link rel="stylesheet" href="http://www.varinderrangi.com/client/styles/bootstrap.min.css"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="bg-img" onload="onLoad();">
+
+
+    <!-- Body of the website starts here -->
+    <div style="padding-top: 30px"></div>
+    <div class="container-fluid containerHead">
+
+        <div class="gradPrimary" style="padding-bottom: 10px">
+            <div class="col-md-12 col-sm-3 col-xs-3 gradPrimary">
+                <img class="col-md-4 col-sm-4 col-xs-4" alt="VR-LOGO" style="margin-right: 40px; margin-top: 20px" src="http://www.varinderrangi.com/client/img/Punjab_Insurance_logo1.jpg"
+                />
+                <label class="col-md-2 col-sm-2 col-xs-2"></label>
+                <img class="col-md-5 col-sm-4 col-xs-4" alt="VR-LOGO" border="10" src="http://www.varinderrangi.com/client/img/varinderRangiLogo.JPG"
+                />
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-12 col-xs-12 col-sm-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light gradSecondary" onclick="changeTabs();">
+                    <button class="navbar-toggler collapsed" style="background-color: white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span style="background-color: white" class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li id="homeTab" class="nav-item active tabHoverStyle">
+                                <a data-toggle="tab" class="fontMaroon nav-link head-size" href="#home">Home
+                                    <!-- <span class="sr-only">(current)</span> -->
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown tabHoverStyle">
+                                <a class="dropdown-toggle nav-link fontMaroon head-size" data-display="false" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Services</a>
+
+                                <div class="dropdown-menu text-size" aria-labelledby="navbarDropdownMenuLink" id="insuranceShow">
+                                    <a class="dropdownStyle dropdown-item dropdownHover" data-toggle="tab" id="superV" href="#superVisa">Super Visa Insurance</a>
+                                    <a class="dropdownStyle dropdown-item dropdownHover" data-toggle="tab" id="lifeIns" href="#lifeInsurance">Life Insurance</a>
+                                    <a class="dropdownStyle dropdown-item dropdownHover" data-toggle="tab" id="critical" href="#criticalIllness">Critical Illness Insurance</a>
+                                    <a class="dropdownStyle dropdown-item dropdownHover" data-toggle="tab" id="disability" href="#disabilityInsurance">Disability Insurance</a>
+                                    <a class="dropdownStyle dropdown-item dropdownHover" data-toggle="tab" id="visitV" href="#visitIns">Visitor Health Insurance</a>
+                                    <a class="dropdownStyle dropdown-item dropdownHover" data-toggle="tab" id="healthAndDental" href="#hndIns">Health & Dental Insurance</a>
+                                    <a class="dropdownStyle dropdown-item dropdownHover" data-toggle="tab" id="travelInsurance" href="#travelIns">Travel Insurance</a>
+                                    <a class="dropdownStyle dropdown-item dropdownHover" data-toggle="tab" id="respIns" href="#resp">RESP</a>
+                                    <a class="dropdownStyle dropdown-item dropdownHover" data-toggle="tab" id="rrspIns" href="#rrsp">RRSP</a>
+                                    <a class="dropdownStyle dropdown-item dropdownHover" data-toggle="tab" id="tfsaIns" href="#tfsa">TFSA</a>
+                                </div>
+                            </li>
+                            <li id="superTab" class="tabHoverStyle nav-item">
+                                <a data-toggle="tab" class="fontMaroon nav-link head-size" href="#superVisa">Super Visa Insurance</a>
+                            </li>
+                            <li id="aboutTab" class="tabHoverStyle nav-item">
+                                <a data-toggle="tab" class="fontMaroon nav-link head-size" href="#aboutUs">About Us</a>
+                            </li>
+                            <li id="contactTab" class="tabHoverStyle nav-item">
+                                <a data-toggle="tab" class="fontMaroon nav-link head-size" href="#contactUs">Contact Us</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="">
+                        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">GET QUOTE NOW!!!</button>
+
+                        <div class="modal" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header" style="background-color: lightgreen">
+                                        <h4 class="text-center">Get Your Quote Now!!!</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- <form action="/send-email" method="post" id="form1"> -->
+                                        <form method="GET" action="mailto:varinderkrangi@gmail.com" enctype="text/plain">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Name" class="form-control " name="fullName" id="fullName">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" placeholder="Email" class="form-control" name="email" id="email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="number" placeholder="Phone No." class="form-control" name="phone" id="phone">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea rows="4" cols="50" placeholder="Message" class="form-control" name="message" id="message"></textarea>
+                                            </div>
+                                            <div class="text-center">
+                                                <input class="btn btn-success" type="submit" value="Get Quote" />
+
+                                                <input type="hidden" name="body" />
+                                            </div>
+                                            <div style="padding-bottom: 10px;"></div>
+
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid containerBody ">
+        <div class="tab-content">
+
+            <!-- Home started -->
+            <div id="home" class="tab-pane active bg-grad">
+                <h1 class="head-bg tab-head">Home</h1>
+                <div>
+                    <hr>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+
+                    <div class="mySlides top fade">
+                        <h1 class="tab-head head-small">Super Visa Insurance</h1>
+                        <img class="w3-animate-right" src="http://www.varinderrangi.com/client/img/superVisa.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides top fade">
+                        <h1 class="tab-head head-small">Life Insurance</h1>
+                        <img class="w3-animate-right" src="http://www.varinderrangi.com/client/img/lifeInsurance.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides top fade">
+                        <h1 class="tab-head head-small">
+                            Travel Insurance
+                        </h1>
+                        <img class="w3-animate-right" src="http://www.varinderrangi.com/client/img/travel-ins.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides top fade">
+                        <h1 class="tab-head head-small">TFSA</h1>
+                        <img class="w3-animate-right" src="http://www.varinderrangi.com/client/img/tfsa.jpg" style="width:100%">
+                    </div>
+                    <div class="mySlides top fade">
+                        <h1 class="tab-head head-small">Visitor health</h1>
+                        <img class="w3-animate-right" src="http://www.varinderrangi.com/client/img/visitorHealth.jpg" style="width:100%">
+                    </div>
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div style="padding-bottom: 5px"></div>
+            </div>
+            <!-- Home Ends -->
+
+            <!-- Super Visa Insurance Begins -->
+            <div id="superVisa" class="tab-pane fade bg-grad">
+                <h1 class="head-bg tab-head">Super Visa Insurance</h1>
+                <div>
+                    <hr>
+                </div>
+                <div class="col-sm-12 col-xs-12 col-md-12">
+
+                    <img class="col-md-12 col-sm-12 col-xs-12 top w3-animate-right" style="padding-bottom: 10px" border="10" src="http://www.varinderrangi.com/client/img/superVisa.jpg "
+                    />
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 col-xs-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#super1" class="btn btn-outline-primary text-size" data-toggle="collapse">What is Supervisa Insurance?</a>
+                                    <hr>
+                                    <div id="super1" class="collapse crtIns text-size">
+                                        <p>This Super Visa has added a high-quality opportunity for those who aspire to reunite
+                                            with their parents and grandparents. The most important and obligatory requirement
+                                            for supervisa is to buy health insurance from a Canadian insurance corporation.
+                                            Such medical insurance needs to be bought for minimum twelve months.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#super2" class="btn btn-outline-primary text-size" data-toggle="collapse">What Are The Requirements For Super Visa Insurance?</a>
+                                    <hr>
+                                    <div id="super2" class="collapse crtIns text-size">
+                                        <p>Anyone applying for the Canadian Super Visa have to show that they've purchased personal
+                                            medical health insurance that meets the Super Visa requirements, all the Super
+                                            Visa insurance you bought today ought to meet the following CIC distinct requirements:
+                                        </p>
+                                        <ul>
+                                            <li>Be issued by a Canadian insurance company</li>
+                                            <li>Be valid for the one year period you specify at the time of purchase</li>
+                                            <li>Include the necessary health care, hospitalization and repatriation insurance</li>
+                                            <li>Provide a minimum of $100,000 in coverage, although you can choose extra</li>
+                                            <li>Valid for every entry to Canada and available for review by the port entry officer
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+                <div class="row ">
+                    <div class="col-md-6 col-xs-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#super3" class="btn btn-outline-primary text-size" data-toggle="collapse">Why Should You Purchase SuperVisa Insurance From Us?</a>
+                                    <hr>
+                                    <div id="super3" class="collapse crtIns text-size">
+                                        <p>
+                                            Applicants should purchase medical health insurance as a proof earlier than submitting their Super Visa application. Purchasing
+                                            a medical insurance from us has many benefits.
+                                        </p>
+                                        <ul>
+                                            <li>When a Super Visa request is turned down for any reason, the applicant is certified
+                                                to get hold of a 100% of the premium paid for the visa coverage. We promise
+                                                to process the refunds as soon as the proof of visa denial is dispatched
+                                                to us.
+                                            </li>
+                                            <li>
+                                                Pro-rated refunds of premiums are also available, if the applicants in case of emergency or determine to return to their
+                                                home countries in advance than their expected date of return.
+                                            </li>
+                                            <li>
+                                                In case if you decide to extend your stay for more than one year you need to purchase a new policy.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#super4" class="btn btn-outline-primary text-size" data-toggle="collapse">Disclaimer</a>
+                                    <hr>
+                                    <div id="super4" class="collapse crtIns text-size">
+                                        <p>
+                                            Remember that it's far the duty of the consumer to get the tentative effective date modified to preserve the policy in impact
+                                            at the preferred date. The day when your mother and father or grandparents come
+                                            to Canada, ought to be the first day of coverage safety policy. The 365 days
+                                            coverage begins from that day. Choosing the date of the insurance coverage isn't
+                                            very difficult.
+                                        </p>
+                                        <p>
+                                            We offer flexibility to change the tentative effective date. Dates can be changed by way of virtually calling
+                                            <b>Varinder Rangi @ +1 416-684-5000</b>
+                                        </p>
+                                        <p>
+                                            We attempt hard to supply the quality Supervisa Insurance plans at your comfort and help you to examine the insurance and
+                                            offer you the Insurance prices with the great insurance. We purpose to make your
+                                            stay the memorable one while you are in Canada.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+            </div>
+
+            <!-- Super Visa Insurance Ends-->
+
+            <!-- Life Insurance Begins -->
+
+            <div id="lifeInsurance" class="tab-pane fade bg-grad">
+                <h1 class="head-bg tab-head">Life Insurance</h1>
+                <div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <img class="col-md-12 col-sm-12 col-xs-12 w3-animate-left" style="padding-bottom: 10px" border="10" src="http://www.varinderrangi.com/client/img/lifeInsurance.jpg"
+                        />
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-size" style="color: white; font-size: 16px; padding: 30px;">
+                        <p>
+                            Life insurance is a contract between the insurance company and insurance policy holder, where company promises to pay fixed
+                            amount of money for the beneficiaries and /or estate upon the death of the insured person in
+                            exchange for premiums. Premiums can be paid monthly or as a lump sum amount. While selecting
+                            the sort of the coverage, numerous elements are taken into consideration along with age, sex,
+                            health condition, smoker or non-smoker and the amount one can afford for the premium etc. There
+                            are different kinds of coverages available to meet everyone's need.
+                        </p>
+                        <p>
+                            <b>
+                                Benefits of Life Insurance:
+                            </b>
+                        </p>
+
+                        <ul>
+                            <li>It covers your financial commitments</li>
+                            <li>It permits your family to preserve their level of comfort</li>
+                            <li>It covers death linked expenditures</li>
+                            <li>It permits you to leave a legacy</li>
+                        </ul>
+                        <p>
+                            The insurer is always having the peace of mind as he or she knows that if something happens to the insurer, the loved ones
+                            are not left with any debt or any financial burden.
+                        </p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#life1" class="btn btn-outline-primary text-size" data-toggle="collapse">Term Life Insurance</a>
+                                    <hr>
+                                    <div id="life1" class="collapse crtIns text-size">
+                                        <p>Term Insurance is the low-cost, temporary insurance protection. It is generally used
+                                            to meet a temporary need (example - mortgage protection), those who need a large
+                                            amount of insurance protection but have limited budgets or Individuals with specific
+                                            business needs, such as business owners who wish to cover the life of a specific
+                                            employee that has a set number of years until retirement. It can cover immediate
+                                            needs or may provide future opportunities to move or convert to permanent life
+                                            insurance without providing medical proof of health. Term plans may be renewable
+                                            after 5, 10 or 20 years without supporting medical evidence
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                <b>Level Term Insurance:</b> A level term insurance policy provides a level
+                                                amount of term insurance coverage for a specific period of time. This type
+                                                of insurance would be appropriate if the amount of obligation will not change
+                                                over the term. For example, level term insurance could be used to cover a
+                                                loan when the principal amount does not change and the client makes interest
+                                                payments only
+                                            </li>
+                                            <br>
+                                            <li>
+                                                <b>Increasing Term Insurance:</b> Increasing term insurance provides a death
+                                                benefit that increases by a specific amount on each policy anniversary. The
+                                                increased amount may be a fixed percentage or according to another variable
+                                                like the consumer price index. For instance, an owner that is worried about
+                                                the tax implications on his property in the event of his death may want to
+                                                purchase insurance that rises with the value in keeping with increasing tax
+                                                liability
+                                            </li>
+                                            <br>
+                                            <li>
+                                                <b>Decreasing Term Insurance:</b> Decreasing term insurance provides life insurance
+                                                protection that decreases by a specific amount on each policy anniversary.
+                                                In most decreasing policies, the policy owner pays the same insurance premium
+                                                for the coverage that reduces over the term of the insurance coverage but
+                                                the face amount decreases during the time
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#life2" class="btn btn-outline-primary text-size" data-toggle="collapse">Permanent Life Insurance</a>
+                                    <hr>
+                                    <div id="life2" class="collapse crtIns text-size">
+                                        <p>Permanent life insurance also known as whole life insurance is the protection that
+                                            is given for the whole life of the insured. It can build equity and have cash
+                                            value. The premium rates are higher than the term life insurance and are more
+                                            valuable in the long run.
+                                        </p>
+                                        <p>
+                                            There are two types of whole life policies:
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <b>Non-Participating Whole Life Insurance:</b> These policies have a guaranteed
+                                                cash value
+                                            </li>
+                                            <br>
+                                            <li>
+                                                <b>Participating Whole Life Insurance:</b> There are two types of cash values
+                                                in participating whole life policies Guaranteed cash value and Non-guaranteed
+                                                cash values. The guaranteed cash values are the ones that depend on your
+                                                premiums, and the non-guaranteed cash values are the ones that depend on
+                                                your dividends. The dividends are paid according to the interest rates depending
+                                                on the Insurance Company's profitability
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+                <div class="row ">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#life3" class="btn btn-outline-primary text-size" data-toggle="collapse">Universal Life Insurance</a>
+                                    <hr>
+                                    <div id="life3" class="collapse crtIns text-size">
+                                        <p>
+                                            Universal life insurance is a form of permanent life insurance with some flexibility. Typically it offers flexible amounts
+                                            of coverage, flexible coverage periods and flexible premiums. With a universal
+                                            life policy the death benefit can be increased over time based on a certain set
+                                            percentage. The indexed amount can be based on Consumer Price Index (CPI) or
+                                            can be a set percentage chosen by the policy holder. This policy contract offers
+                                            a choice of yearly renewable term (YRT) costs or level cost of insurance (LCOI)
+                                        </p>
+                                        <p>
+                                            The policy owner can choose a level amount equal to the face amount of the policy or the face amount plus the cash value
+                                            that has accumulated under the policy. The most flexible component of a universal
+                                            life policy is the alternatives available for the investment of premium contributions
+                                            beyond what is used to cover the cost of insurance. This amount forms the cash
+                                            value of the policy. Some universal life insurance contracts allow the owner
+                                            to choose how the cash value component will be invested. The choices available
+                                            can be a Guaranteed Investment Certificate (GIC), money market account, an index
+                                            fund investment or a segregated fund investment
+                                        </p>
+                                        <p>
+                                            A universal life insurance policy owner has some choices on the terms of the contract
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                <b>Policy loan:</b> The policy may allow the policyholder to take a loan against
+                                                the accumulated cash value. If the insured dies while there is still a loan
+                                                outstanding on the policy, the amount of the loan plus the interest owing
+                                                will be deducted from the amount of the death benefit paid to the beneficiary
+                                            </li>
+                                            <br>
+                                            <li>
+                                                <b>Withdraw cash value: </b>The policy owner may also withdraw a portion of
+                                                the cash value accumulated under the policy. In this case, the owner of the
+                                                policy may settle for a different plan or replace the amount withdrawn plus
+                                                interest to achieve the same objectives while the policy was purchased
+                                            </li>
+                                            <br>
+                                            <li>
+                                                <b>Leverage: </b>The owner of a universal policy may withdraw the cash value
+                                                and place it in other forms of investments. The policy owner may benefit
+                                                if these investments generate a higher return than the investment account
+                                                in the universal life policy
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+            </div>
+
+            <!-- Life Insurance Ends -->
+
+            <!-- RESP Begins -->
+
+            <div id="resp" class="tab-pane fade bg-grad">
+                <h1 class="head-bg tab-head">RESP</h1>
+                <div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <img class="col-md-12 col-sm-12 col-xs-12 w3-animate-top" style="padding-bottom: 10px" border="10" src="http://www.varinderrangi.com/client/img/resp-1.jpg"
+                        />
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#resp1" class="btn btn-outline-primary text-size" data-toggle="collapse">What is RESP?</a>
+                                    <hr>
+                                    <div id="resp1" class="collapse crtIns text-size">
+                                        <p>A Registered Education Savings Plan, or RESP, is an investment vehicle available
+                                            to parents in Canada to save for their children's post-secondary education. The
+                                            principal advantages of RESPs are the access they provide to the Canada Education
+                                            Savings Grant (CESG) and as method of generating tax-deferred income
+                                        </p>
+                                        <p>
+                                            RESP is the term associated with your child's future. You may easily get different plans. Some of you may be comfortable
+                                            paying the premiums on a monthly basis. There are some people who wish to put
+                                            into account whenever they have money. You can start earning interest as soon
+                                            as you start saving. You can secure the education of your child in this way
+                                        </p>
+                                        <p>
+                                            An RESP is a tax shelter designed to benefit post-secondary students. With an RESP, contributions (comprising the investment's
+                                            principal) are, or have already been, taxed at the contributor's tax rate, while
+                                            the investment growth (and CESG) is taxed on withdrawal at the recipient's tax
+                                            rate. An RESP recipient is typically a post-secondary student; these individuals
+                                            generally pay little or no federal income tax, owing to tuition and education
+                                            tax credits. Thus, with the tax-free principal contribution available for withdrawal,
+                                            CESG, and nearly-tax-free interest, the student will have a good source of income
+                                            to fund his or her post-secondary education
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#resp2" class="btn btn-outline-primary text-size" data-toggle="collapse">What is Canada Education Savings Grant?</a>
+                                    <hr>
+                                    <div id="resp2" class="collapse crtIns text-size">
+                                        <p>The Canada Education Savings Grant (CESG) is provided to complement RESP contributions,
+                                            wherein the government of Canada contributes 20% of the first $2,500 in annual
+                                            contributions made to an RESP. After changes introduced in the 2007 Canadian
+                                            federal budget, the government may contribute up to $500 per year to a participating
+                                            RESP, to a lifetime maximum of $7,200. This income is available upon withdrawal
+                                            from the RESP by a post-secondary recipient, with a maximum lifetime contribution
+                                            of $50,000. Any contributions over this amount are subject to taxation
+                                        </p>
+                                        <p>
+                                            The government grants introduced in 2005, entitled Additional CESG, allowed an additional 10% or 20% for a total of an extra
+                                            30 or 40 cents on each dollar of the first $500 contributed to an RESP, depending
+                                            on the family income of the beneficiary's primary caregiver. An application is
+                                            made through the promoter of the RESP, which is often a bank, mutual fund company
+                                            or group RESP provider
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+                <div class="row ">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#resp3" class="btn btn-outline-primary text-size" data-toggle="collapse">RESP Expiry/Closure</a>
+                                    <hr>
+                                    <div id="resp3" class="collapse crtIns text-size">
+                                        <ul>
+                                            <li>
+                                                Any savings in the account received from the Canada Education Savings Grant (CESG) or Canada Learning Bond (CLB) will be
+                                                returned to the Government of Canada
+                                            </li>
+                                            <li>
+                                                Any personal savings in the account will be returned to the person who opened the account
+                                            </li>
+                                            <li>
+                                                Any interest in both the above savings will be returned to you if the following needs are met:
+                                                <ol>
+                                                    <li>
+                                                        The person who opened the account is a Canadian resident
+                                                    </li>
+
+                                                    <li>
+                                                        The RESP account is older than 10 years
+                                                    </li>
+
+                                                    <li>
+                                                        All the beneficiaries are a minimum of 21 years old and are not eligible for EAP ( Educational Assistance Payment)
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+            </div>
+
+            <!-- RESP Ends -->
+
+            <!-- RRSP Begins -->
+
+            <div id="rrsp" class="tab-pane fade bg-grad">
+                <h1 class="head-bg tab-head">RRSP</h1>
+                <div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <img class="col-md-12 col-sm-12 col-xs-12 w3-animate-bottom" style="padding-bottom: 10px" border="10" src="http://www.varinderrangi.com/client/img/rrspImg.jpg"
+                        />
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#rrsp1" class="btn btn-outline-primary text-size" data-toggle="collapse">What is RRSP?</a>
+                                    <hr>
+                                    <div id="rrsp1" class="collapse crtIns text-size">
+                                        <p>A registered retirement savings plan (RRSP) is an account designed to help Canadians
+                                            save for retirement. The money in an RRSP can be used to buy a whole host of
+                                            investments—mutual funds, ETFs, stocks, bonds, and the like. While the investments
+                                            are held in your RRSP, you won't have to pay tax on any interest, dividends,
+                                            or capital gains you earn. This makes the decision to open a RRSP a wise one.
+                                            Funds are usually held in an RRSP until retirement at which time the contributions
+                                            may be withdrawn or transferred to other investment plans.
+                                        </p>
+                                        <p>RRSP's are ideal for:</p>
+                                        <ul>
+                                            <li>
+                                                individuals who do not belong to a pension plan
+                                            </li>
+                                            <li>
+                                                individuals whose pension plans are inadequate
+                                            </li>
+                                            <li>
+                                                Individuals who want a higher retirement income than their pensions can provide
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            When the money is withdrawn from an RRSP, it becomes taxable income. If the income is withdrawn at retirement, the investor's
+                                            tax rate is usually lower in comparison to his/her peak earning years. The maximum
+                                            annual tax-deductible contributions to RRSP an individual is per mitted to add
+                                            into his/her plan must be lesser than the following:
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                18% of the previous year's earned income, OR
+                                            </li>
+                                            <li>
+                                                The RRSP limit for the year, MINUS
+                                            </li>
+                                            <li>
+                                                The previous year's pension adjustment and the current year's past service pension adjustment, PLUS
+                                            </li>
+                                            <li>
+                                                The unused RRSP contribution room at the end of the preceding taxation year
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#rrsp2" class="btn btn-outline-primary text-size" data-toggle="collapse">Different Types of RRSPs</a>
+                                    <hr>
+                                    <div id="rrsp2" class="collapse crtIns text-size">
+                                        <p>
+                                            RRSPs can be categorized in different types:
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                <b>Group and Individual RRSPs: </b>Group RRSPs provide benefits similar to those
+                                                offered by individual RRSPs with the exception that the employer, union or
+                                                professional association administers them as a group plan.
+                                                <ul>
+                                                    <li>
+                                                        Employees contribute through wage deduction matched in whole or partial by the employer, union or association
+                                                    </li>
+                                                    <li>
+                                                        Both the employee and employer contributions are deductible from taxable income
+                                                    </li>
+                                                    <li>
+                                                        Employer contributions are considered additional salary to the employee
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <b>Managed and self-directed RRSPs: </b>In both types, the plan holder chooses
+                                                from a variety of investments.
+                                                <ul>
+                                                    <li>
+                                                        Self-directed RRSPs are available through banks, trust companies and investment dealers. All investment decisions are made
+                                                        by the plan holder
+                                                    </li>
+                                                    <li>
+                                                        In a managed RRSP, the holder`s deposit is invested in products held in trust under the plan and no further investment decisions
+                                                        are required by the plan holder
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <b>Spousal RRSPs: </b>This type of RRSP permits an individual to contribute
+                                                to an RRSP for his or her spouse (or common –law partner) and claim the deduction
+                                                so long as the contribution does not exceed the maximum amount available
+                                                for his/her spouse's own RRSP plan. Since the RRSP is registered under the
+                                                spouse's name, any withdrawals made from the RRSP will be treated as taxable
+                                                income for the spouse and not the contributor. However, a contributing spouse
+                                                may be liable for tax on the withdrawn funds
+                                            </li>
+                                        </ol>
+                                        <p>
+                                            In addition to using the RRSP as a tool to enjoy saving on your taxable income and save for the future, RRSPs may also be
+                                            used as a “safety net” for unexpected financial emergencies. However, the early
+                                            withdrawals will be taxed and counted towards your taxable income for the fiscal
+                                            year.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+                <div class="row ">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#rrsp3" class="btn btn-outline-primary text-size" data-toggle="collapse">Ways to borrow money from your RRSP</a>
+                                    <hr>
+                                    <div id="rrsp3" class="collapse crtIns text-size">
+                                        <ol>
+                                            <li>
+                                                <b>First Time Home Buyer Plan (HBP): </b>When purchasing or building a home
+                                                for the first time, the first time Home Buyer's Plan (HBP) allows you to
+                                                borrow up to $25,000 in a calendar year from your Registered Retirement Savings
+                                                Plans (RRSPs). You can withdraw a single amount or make a series of withdrawals
+                                                within the same calendar year. Your RRSP contributions must remain in the
+                                                RRSP for at least 90 days before you can withdraw them under the Home Buyer's
+                                                Plan, or they may not be deductible for any year. However, some plans, such
+                                                as locked-in or group RRSPs, do not allow you to withdraw funds from them.
+                                                Borrowed funds must be repaid within 15 years to the RRSP, in equal annual
+                                                installments. Any missed or incomplete payments will be considered income
+                                                and taxed for that year. If you take advantage of the First Time Home Buyer's
+                                                Plan, it is mandated that you must buy or build the qualifying home before
+                                                October 1st of the following year from the year of the withdrawal. For instance,
+                                                if you withdrawal the qualifying amount from your RRSP in January of 2010,
+                                                your house must be purchased or built before October 1st of 2011. Excess
+                                                payments made above the minimum requirement each year will reduce the required
+                                                payments in future years. Re-payments to one's RRSP will begin two years
+                                                after the year of withdrawal. As with RRSP contributions, you are allowed
+                                                to make repayments within the 60 days following the year end. Repaid amounts
+                                                do not receive a tax deduction and they do not affect your annual RRSP contribution
+                                                limit. You also have the option of repaying the funds earlier without penalty.
+                                                Individuals cannot participate in the Home Buyer's Plan if they or their
+                                                spouse has owned a principal residence and lived in it for five calendar
+                                                years before the time of withdrawal. This Home Buyer's Plan can only be used
+                                                once
+                                            </li>
+                                            <br>
+                                            <li>
+                                                <b>Lifelong learning plan (LLP): </b>The Lifelong Learning Plan (LLP) is a Canada
+                                                Revenue Agency program that allows you to withdraw up to $20,000 (annual
+                                                limit of $10,000) from your Registered Retirement Savings Plans (RRSP) to
+                                                finance full-time training or education for you, your spouse, or common-law
+                                                partner. However, the LLP cannot be used to finance your children's training
+                                                or education, or the training or education of your partner's children. ALL
+                                                of the following conditions must apply:
+                                                <ul>
+                                                    <li>
+                                                        The student must be a full-time student (or a part-time student if he or she meets the disability conditions)
+                                                    </li>
+                                                    <li>
+                                                        The RRSP owner must be a resident of Canada
+                                                    </li>
+                                                    <li>
+                                                        The student has to enroll in a qualifying educational program at a designated educational institution
+                                                    </li>
+                                                    <li>
+                                                        Participation in the Lifelong Learning Plan (LLP) has to be done before the end of the year the student reaches the age of
+                                                        71 years old.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+            </div>
+
+            <!-- RRSP Ends -->
+
+            <!-- TFSA Begins -->
+
+            <div id="tfsa" class="tab-pane fade bg-grad">
+                <h1 class="head-bg tab-head">TFSA</h1>
+                <div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <img class="col-md-12 col-sm-12 col-xs-12 w3-animate-right" style="padding-bottom: 10px" border="10" src="http://www.varinderrangi.com/client/img/tfsa.jpg"
+                        />
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#tfsa1" class="btn btn-outline-primary text-size" data-toggle="collapse">What is TFSA?</a>
+                                    <hr>
+                                    <div id="tfsa1" class="collapse crtIns text-size">
+                                        <p>TFSA is a tax-free saving account, where your contributions and investments are tax-sheltered.
+                                            It is an ideal solution when you don't want to lock in your funds for a fixed
+                                            term or interest rate. This means there is no tax applicable on the investment
+                                            income. This program was started in 2009. Applicants who are more than or of
+                                            18 years of age, having a valid social insurance number (SIN), can apply for
+                                            TFSA. They can set their money aside for future security
+                                        </p>
+                                        <p>
+                                            Types of TFSAs, offered by the Canadian government:
+                                        </p>
+                                        <ul>
+                                            <li>Deposit</li>
+                                            <li>Annuity Contract</li>
+                                            <li>Arrangement in Trust</li>
+                                        </ul>
+                                        <p>TFSA can be issued by banks, insurance companies, credit unions, and trust companies</p>
+                                        <p>
+                                            <b>NOTE:</b> An applicant who is not a resident of Canada and is determined to be
+                                            that for various income tax reasons can still have a valid SIN and is allowed
+                                            to open a TFSA. But any contributions made while as a non-resident will be subjected
+                                            to 1% tax for every month the contribution stayed in the account. A holder can
+                                            have more than one TFSA at any time, but the total amount you contribute to all
+                                            your TFSAs cannot be more than your available TFSA contribution room for that
+                                            year
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#tfsa2" class="btn btn-outline-primary text-size" data-toggle="collapse">Benefits of TFSA</a>
+                                    <hr>
+                                    <div id="tfsa2" class="collapse crtIns text-size">
+                                        <ul>
+                                            <li>No Tax on Income – Earnings from qualified investments is never taxed</li>
+                                            <li>No Restrictions on Withdrawal – Money from your TFSA account can be withdrawn
+                                                at any time, for any reason</li>
+                                            <li>Tax-Free Withdrawals – Withdraw your savings from TFSA without paying any interest
+                                                as your savings are totally tax-free</li>
+                                            <li>Put Back the Withdrew Amount – Once you withdraw the amount, you can always re-contribute
+                                                in the year or years after you withdraw them</li>
+                                            <li>No Fees – There's no monthly or annual fee applicable with Tax-Free Savings Accounts
+                                                so you can watch your money grow faster</li>
+                                            <li>Higher Interest Rate – With a higher interest rate of 1.35% p.a., account holders
+                                                enjoy saving more and making money with their savings. Interest is calculated
+                                                daily and paid monthly</li>
+                                            <li>Safe & Secure – Deposits are always held in Canadian currency and are insurable
+                                                under the Canada Deposit Insurance Corporation Act</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+                <div class="row ">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#tfsa3" class="btn btn-outline-primary text-size" data-toggle="collapse">Terms & Conditions for TFSA</a>
+                                    <hr>
+                                    <div id="tfsa3" class="collapse crtIns text-size">
+                                        <p>
+                                            <b>Maximum Contribution Limit for TFSA</b>
+                                        </p>
+                                        <p>
+                                            The annual limit of contribution to Tax-Free Savings Accounts is set at $5,500 for 2018. The maximum limits for savings in
+                                            the TFSA account keeps changing. The maximum contribution limit from 2009 to
+                                            2012 was $5,000 and $5,500 respectively. For the years 2015 and 2016 it limit
+                                            was $10,000 and $5,500 respectively. In case the candidate withdraws the amount
+                                            from TFSA account, the amount withdrawn is added to your contribution room in
+                                            the next calendar year
+                                        </p>
+                                        <p>
+                                            Any applicant who is or above 18 years of age with a valid SIN (social insurance number) is eligible to open a TFSA
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+            </div>
+
+            <!-- TFSA Ends -->
+
+            <!-- Visitor Health Insurance Begins -->
+
+            <div id="visitIns" class="tab-pane fade bg-grad">
+                <h1 class="head-bg tab-head">Visitor Health Insurance</h1>
+                <div>
+                    <hr>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <img class="col-md-12 col-sm-12 col-xs-12 w3-animate-left" style="padding-bottom: 10px" border="10" src="http://www.varinderrangi.com/client/img/visitorHealth.jpg"
+                    />
+                </div>
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#visit1" class="btn btn-outline-primary text-size" data-toggle="collapse">What is Visitor Visa Health Insurance?</a>
+                                    <hr>
+                                    <div id="visit1" class="collapse crtIns text-size">
+                                        <p>A visitor to Canada Insurance can provide peace of mind that coverage will be provided
+                                            to one's family members or friend's visiting to Canada from an outside country
+                                            for any unforeseen medical emergency expenses during their visit. Few come as
+                                            a tourist to explore the country. There are few people with an aim of meeting
+                                            their relatives staying in this nation. Some people visit the place for business
+                                            purpose. But, all of them are unprotected without coverage. Human beings are
+                                            very sensitive to the specific surroundings. As a result, there can be chances
+                                            of health problems once they visit a different country with varied weather condition.
+                                            Health care costs in Canada are very expensive. Without emergency hospital and
+                                            medical insurance, visitors to Canada would be responsible for these high costs,
+                                            which can create a significant financial burden.
+                                        </p>
+                                        <p>
+                                            This you can purchase if you are a frequent visitor to Canada. This is suitable for people staying in any country. You can
+                                            get coverage for many conditions. Some of them are:
+                                        </p>
+                                        <ul>
+                                            <li>Sickness</li>
+                                            <li>Accidental injury</li>
+                                            <li>Sudden illness</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#visit2" class="btn btn-outline-primary text-size" data-toggle="collapse">What Does Visitor Health Insurance Cover?</a>
+                                    <hr>
+                                    <div id="visit2" class="collapse crtIns text-size">
+                                        <p>If you have plans to visit Canada our
+                                            <b>Visitor Health Insurance</b> is one of the good options for you in such situations.
+                                            If you have purchased this policy, we are liable to provide maximum facilities.
+                                            We cover various areas. Following is the list of our coverage:
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <b>Medical service:</b> You will get the coverage of emergency medical services.
+                                                It includes the anesthetic as well as surgical services. You will get the
+                                                reimbursement of the expenses you have incurred for treatment.</li>
+                                            <li>
+                                                <b>Hospitalization expenses:</b> When you are ill, you will be hospitalized.
+                                                Now, the charges of the hospital in a foreign country will be really costly.
+                                                But, with our visitor's health insurance plan, you can get the coverage expenses
+                                                within the hospital premises.</li>
+                                            <li>
+                                                <b>Prescription drugs:</b> After the doctor has examined at a private chamber,
+                                                he will provide certain drugs for treatment. You can get the coverage of
+                                                prescription drugs from us.</li>
+                                            <li>
+                                                <b>Dental emergencies:</b> In Canada, dental expenses are too high. A visitor
+                                                may not have such potential to pay for such emergencies. But we will provide
+                                                the coverage for that.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+                <div class="row ">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#visit3" class="btn btn-outline-primary text-size" data-toggle="collapse">International Student Medical Insurance</a>
+                                    <hr>
+                                    <div id="visit3" class="collapse crtIns text-size">
+                                        <p>
+                                            Some insurance companies apprehend the complex needs of International and Canadian student studying abroad. As a result,
+                                            some of the most comprehensive Student Medical Insurance programs are offered.
+                                            Insurance plans that available for both International and Canadian students offer
+                                            the option for the student to purchase coverage for accompanying or extended
+                                            family members, under a single policy. Some plans provide additional benefits
+                                            including academic offerings, maternity advantage, annual doctor visits, accidental
+                                            death and dismemberment and much more.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+            </div>
+
+            <!-- Visitor Health Insurance Ends-->
+
+            <!-- Disability Insurance Begins -->
+
+            <div id="disabilityInsurance" class="tab-pane fade bg-grad">
+                <h1 class="head-bg tab-head">Disability Insurance</h1>
+                <div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <img class="col-md-12 col-sm-12 col-xs-12 w3-animate-top" style="padding-bottom: 10px" border="10" src="http://www.varinderrangi.com/client/img/disabilityIns.jpg"
+                        />
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-size" style="color: white; font-size: 16px; padding: 30px;">
+                        <p>
+                            Disability Insurance is a form of insurance that can help you to replace a portion of your income if you are not able to
+                            work. A disability can result from any reason, it might be sudden or of any degenerative condition.
+                            The chance of becoming disabled due to injury or illness during your working years is very high.
+                            Disability Insurance could assist you pay the mortgage payments and other bills while you are
+                            unable to work. Disability Insurance can help ensure your pay cheque. Your inability to work
+                            can risk your family's lifestyle and well-being. To guard your income Disability Insurance provides
+                            you a variety of options from which we can help you pick the right one for you.
+                        </p>
+                        <p>
+                            During your inability, you might even have to withdraw your regular savings, which might disrupt your future plans of retirement
+                            or child education. Disability Insurance is a great way to protect your funds. There are different
+                            Elimination Periods (EP), (length of time to wait before benefits begin), and different Benefit
+                            Periods (BP), (length of time benefits will be payable), that will allow you to choose the plan
+                            that best suits your needs. There are a few taxable as well as tax-free Disability Insurance
+                            plans. The benefits are paid on the monthly basis Disability Insurance can replace 60% to 85%
+                            of your annual income
+                        </p>
+
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#disability1" class="btn btn-outline-primary text-size" data-toggle="collapse">Short Term Disability (STD)</a>
+                                    <hr>
+                                    <div id="disability1" class="collapse crtIns text-size">
+
+                                        <p>This coverage begins when at a certain period you are disabled and are unable to
+                                            earn an income. Most short-term disability proposals pay a proportion of usual
+                                            earnings, for example, 70 percent up to a definite time span. Normally, this
+                                            can be around 15, 26 or 52 weeks
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#disability2" class="btn btn-outline-primary text-size" data-toggle="collapse">Long Term Disability (LTD)</a>
+                                    <hr>
+                                    <div id="disability2" class="collapse crtIns text-size">
+                                        <p>This insurance coverage begins when your temporary disability benefits run out. Normally,
+                                            the objective is to put back 60 to 70 percent of your regular earnings, however,
+                                            there is always an uppermost dollar sum (e.g., $5000 on a monthly basis). Given
+                                            this, if you make high revenue, group LTD plans may reinstate below 60 to 70%
+                                            of your pre-disability revenues up to the age of 70 years.
+                                        </p>
+                                        <p>
+                                            There is variation in the policies depending on the types of disability e.g. whether the disability benefits are to be received
+                                            if the insurer cannot perform the duties of his or her occupation or any job.
+                                            The policy is continued after the person gets recovered from the disability.
+                                            The benefits could be paid if there is a recurrence of the prior disability or
+                                            subsequent disability occurs. In simple words, Disability Insurance offers you
+                                            a simple, affordable way to provide an income should a disability prevent you
+                                            from working
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+            </div>
+
+            <!-- Disability Insurance Ends -->
+
+            <!-- Critical Illness Insurance Begins -->
+            <div id="criticalIllness" class="tab-pane fade bg-grad">
+                <h1 class="head-bg tab-head">Critical Illness Insurance</h1>
+                <div>
+                    <hr>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <img class="col-md-12 col-sm-12 col-xs-12 w3-animate-bottom" style="padding-bottom:5px; " alt="Critical-Illness" border="10" src="http://www.varinderrangi.com/client/img/critical-illness.jpg"
+                    />
+                </div>
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#crt1" class="btn btn-outline-primary text-size" data-toggle="collapse">Why Choose Critical Illness Insurance?</a>
+                                    <hr>
+                                    <div id="crt1" class="collapse crtIns text-size">
+                                        <p>With such a variety of advancements in medical science, the opportunities of survival
+                                            and healing from any critical illness like cancer, stroke or coronary heart attacks
+                                            have improved considerably. The majority of the medical plans have the coverage
+                                            for the hospital and medical expenses but that might not be enough to pay for
+                                            the transpiration to the treatment centers, childcare, and others.
+                                        </p>
+                                        <p>
+                                            Critical Illness insurance provides a lump sum amount that is tax-free if you come across any illness which is covered by
+                                            the insurance. The lump sum will be received as a cash payment and not as a reimbursement
+                                            of the costs. Thus it is up to you how you want to spend the money. You can use
+                                            the Critical Illness Insurance money to pay for private nursing, any medical
+                                            equipment or even to pay off your mortgage.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#crt2" class="btn btn-outline-primary text-size" data-toggle="collapse">What Are The Conditions To Avail The Benefits?</a>
+                                    <hr>
+                                    <div id="crt2" class="collapse crtIns text-size">
+                                        <p>Under Critical Illness Insurance Policy, there is a condition, under which you must
+                                            survive a number of pre-decided days in order to avail the benefit. In simple
+                                            words, according to some policies, you may have to survive 30 days after your
+                                            disease has been diagnosed in order to claim the lump sum. It is known as the
+                                            minimum survival period. You can consider new medical treatments and medications
+                                            not covered by private or government health insurance plan.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#crt3" class="btn btn-outline-primary text-size" data-toggle="collapse">What Is Covered Under Critical Illness Insurance?</a>
+                                    <hr>
+                                    <div id="crt3" class="collapse crtIns text-size">
+                                        <h6>A few illnesses that are covered by Critical Illness Insurance:
+                                        </h6>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li>Alzheimer disease</li>
+                                                    <li>Aortic Surgery</li>
+                                                    <li>Aplastic Anaemia</li>
+                                                    <li>Bacterial Meningitis</li>
+                                                    <li>Benign Brain Tumour</li>
+                                                    <li>Loss of Vision</li>
+                                                    <li>Certain types of Cancer</li>
+                                                    <li>Coma</li>
+                                                    <li>Coronary Artery Bypass Surgery</li>
+                                                    <li>Loss of Hearing</li>
+                                                    <li>Heart Attack</li>
+                                                    <li>Heart Valve Replacement</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li>Kidney Failure</li>
+                                                    <li>Loss of Independent Existence</li>
+                                                    <li>Loss of Limbs</li>
+                                                    <li>Loss of Speech</li>
+                                                    <li>Major Organ Transplant</li>
+                                                    <li>Major Organ Failure on Waiting List</li>
+                                                    <li>Motor Neuron Disease</li>
+                                                    <li>Multiple Sclerosis</li>
+                                                    <li>Occupational HIV Infection</li>
+                                                    <li>Paralysis</li>
+                                                    <li>Parkinson's Disease</li>
+                                                    <li>Severe burn</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#crt4" class="btn btn-outline-primary text-size" data-toggle="collapse">Cancel/Refund The Insurance Premium</a>
+                                    <hr>
+                                    <div id="crt4" class="collapse crtIns text-size">
+                                        <p>
+                                            The insured additionally has the selection to pay a further fee and acquire a complete refund of all premiums paid at a predetermined
+                                            point if no claims have occurred. Most Critical Illness coverage products provide
+                                            access to the Best Doctors carrier on all their critical illness products. This
+                                            service affords the patron with get entry to a carrier that directs them to the
+                                            top North American doctors primarily based on their illness and books them in
+                                            at reduced fee for appropriate treatment. Critical illness insurance in Canada
+                                            gives assist paying charges associated with life altering ailments. If you grow
+                                            to be ill with an illness covered by your insurance and survive the waiting period,
+                                            you acquire a lump sum tax free.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+            </div>
+
+            <!-- Critical Illness Insurance Ends-->
+
+            <!-- Travel Insurance Begins -->
+
+            <div id="travelIns" class="tab-pane fade bg-grad">
+                <h1 class="head-bg tab-head">Travel Insurance</h1>
+                <div>
+                    <hr>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <img class="col-md-12 col-sm-12 col-xs-12 w3-animate-right" style="padding-bottom: 10px" border="10" src="http://www.varinderrangi.com/client/img/travel-ins.jpg"
+                    />
+                </div>
+                <div class="row ">
+                    <div class="col-md-12">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#travel1" class="btn btn-outline-primary text-size" data-toggle="collapse">Travel Insurance & Its Features</a>
+                                    <hr>
+                                    <div id="travel1" class="collapse crtIns text-size">
+                                        <p>
+                                            A Travel insurance is an absolute necessity these days. A travel insurance plan provides assurance that any unexpected medical
+                                            emergency costs are covered so you can travel worry-free. If you're heading to
+                                            another province or country your full provincial healthcare plan won't go with
+                                            you. That means, if you experience a medical emergency away from home, you'll
+                                            be left to arrange for care and pay for it too.
+                                        </p>
+                                        <p>Features:</p>
+                                        <ul>
+                                            <li>
+                                                <b>Emergency Medical Expenses:</b> Covers medical costs incurred due to illness
+                                                or accident including medically necessary and prescribed emergency evacuation.
+                                                It covers out-patient, in-patient, medical aid, therapies and diagnostic
+                                                tests as described in the policy.
+                                            </li>
+                                            <li>
+                                                <b>Emergency Medical Evacuation:</b> Evacuation to the home country is covered
+                                                up to the medical sum insured.</li>
+                                            <li>
+                                                <b>Repatriation of remains:</b> Covers the funeral expenses or expenses of repatriating
+                                                the remains back to your home country, in case of death of the insured overseas.
+                                            </li>
+                                            <li>
+                                                <b>Emergency Dental Expenses:</b> Covers acute anesthetic treatment of natural
+                                                teeth.
+                                            </li>
+                                            <li>
+                                                <b>Hospital Expenses:</b> Pays a daily allowance as stated in the policy in
+                                                the event of hospitalisation either due to sickness or accidents.
+                                            </li>
+                                            <li>
+                                                <b>Accidental Death and Permanent Total Disability Common Carrier:</b> The company
+                                                will pay the sum insured specified in the schedule in addition to the sum
+                                                insured specified under the Personal Accident section, If the insured sustains
+                                                Accidental bodily injury during the course of the journey while travelling
+                                                in a common carrier such as rail, tram or airplane; and such bodily injury
+                                                results in death or permanent total disability.
+                                            </li>
+                                            <li>
+                                                <b>Flight delay:</b> Compensation if the aircraft is delayed for more than 12
+                                                hours than the original scheduled departure time.
+                                            </li>
+                                            <li>
+                                                <b>Loss of Passport:</b> Expenses incurred in obtaining a fresh new passport.
+                                            </li>
+                                            <li>
+                                                <b>Loss of Checked Baggage:</b> Compensation for the permanent loss of checked-in-baggage.
+                                            </li>
+                                            <li>
+                                                <b>Financial Emergency Assistance:</b> Insurance cover is provided in the event
+                                                of the insured person getting into a financial emergency due to theft, robbery
+                                                of his/her travel funds. A fixed sum is paid as emergency assistance up to
+                                                the limits specified under the policy.
+                                            </li>
+                                            <li>
+                                                <b>Hotel Accommodation:</b> Pays for the cost of hotel accommodation, if the
+                                                insured person sustains bodily injury or sickness which directly and independently
+                                                of all other causes results in the hospital stays as an in-patient and misses
+                                                flight back to the country of residence.
+                                            </li>
+                                            <li>
+                                                <b>Hijack Distress Allowance:</b> Insurance cover is provided in the event of
+                                                the hijack of the air or sea common carrier in which the insured person is
+                                                travelling whilst on the trip abroad during the period of insurance. An allowance
+                                                will be paid for each day of the hijack up to the limits specified under
+                                                the policy.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+
+            </div>
+
+            <!-- Travel Insurance Ends -->
+
+            <!-- Health and Dental Insurance Begins -->
+
+            <div id="hndIns" class="tab-pane fade bg-grad">
+                <h1 class="head-bg tab-head">Health & Dental Insurance</h1>
+                <div>
+                    <hr>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <img class="col-md-12 col-sm-12 col-xs-12 w3-animate-left" style="padding-bottom: 10px" border="10" src="http://www.varinderrangi.com/client/img/healthAndDental.jpg "
+                    />
+                </div>
+                <div class="row ">
+                    <div class="col-md-12">
+                        <div class="card-deck">
+                            <div class="card bg-primary">
+                                <div class="card-body">
+                                    <a href="#hnd1" class="btn btn-outline-primary text-size" data-toggle="collapse">Health & Dental Insurance & Its Features</a>
+                                    <hr>
+                                    <div id="hnd1" class="collapse crtIns text-size">
+                                        <p>
+                                            Health & Dental Insurance Protect yourself from medical expenses not covered by provincial health insurance. We have many
+                                            choices to cover prescription drugs, dental care and so much more. We offer a
+                                            wide variety of health and dental insurance plans for both individuals and families.
+                                            We are ready to assist employers in designing a plan that caters to your company's
+                                            individual needs while helping employees manage their health and wellness concerns.
+                                            <p>
+                                                You and your family can have access to the Health and Dental protection you need. The Health and Dental Plan is specially
+                                                designed for those who are not covered by a group plan
+                                            </p>
+
+
+                                        </p>
+                                        <p>Flexible and affordable, the Health and Dental plan offers four levels of increasing,
+                                            comprehensive coverage for:</p>
+                                        <ul>
+                                            <li>
+                                                Prescription Drugs
+                                            </li>
+                                            <li>
+                                                Dental Services
+                                                <li>
+                                                    Vision care and Hospital benefits
+                                                </li>
+                                        </ul>
+                                        <p>
+                                            Our Drug and Dental plan also includes benefits like
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                Vision Care
+                                            </li>
+                                            <li>
+                                                Extended Health Care
+                                            </li>
+                                            <li>
+                                                Home Care and much more
+                                            </li>
+                                        </ul>
+                                        <p>And the Dental plan does not require completion of a medical assessment</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="padding-bottom: 10px"></div>
+
+            </div>
+
+            <!-- Health and Dental Insurance Ends -->
+
+            <!-- About Us Begins -->
+
+            <div id="aboutUs" class="tab-pane fade bg-grad">
+                <h1 class="head-bg tab-head">About Us</h1>
+                <div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 col-sm-7 col-xs-7 container" style="padding: 20px;color: white;">
+                        <h5 class="head-small">Punjab Insurance Incorporated</h5>
+                        <p>Do you require assistance with Personal, Business, Life, or Investments? </p>
+                        <p>We collaborate with experienced agents in the industry to deliver the most appropriate product and
+                            offerings to fulfill your insurance necessities. Punjab Insurance offers coverage and expertise
+                            required to get useful, efficient and cost-effective solutions to fulfill your coverage desires.
+                        </p>
+                        <p>Punjab Insurance is an impartial insurance brokerage. With our conviction that insurance is clearly
+                            beyond the problem of charges, we are dedicated and committed to offering our customers comprehensive
+                            coverage solutions peculiar to their needs.
+                        </p>
+                        <p>As an idea conceived in 2001 out of the quest of providing succour against eventualities, with rising
+                            statistics of injuries, hazards and mishaps occurring from day to day, Punjab Insurance was incorporated
+                            in 2006 to meet the rising needs and soothe the lives of affected individuals.
+                        </p>
+                        <p>
+                            We offer extensive range of products to include but not limited to Life Coverage, Critical Illness Coverage, SuperVisa, Travel,
+                            Medical, Health and Accidental Insurance. We have a broad range of insurance merchandise selection
+                            that is sure to extensively suit your preference.
+                        </p>
+                        <p>
+                            Every Punjab Insurance customer's date begins with an assessment of the patron's needs, this is the bedrock to assisting
+                            with building a comprehensive and complete coverage plan
+                        </p>
+                        <h6>Our Mission</h6>
+                        <p>
+                            To provide a specialized steering and advice to making an investment in diverse coverage schemes
+                        </p>
+                        <h6>Our Aim</h6>
+                        <p>
+                            To do what we know how to do best by offering you top-class Insurance advices that is best tailored to cater for your welfare
+                            and those of your relatives.
+                        </p>
+                        <br>
+
+                    </div>
+                    <div class="col-md-5 col-sm-3 col-xs-3" style="padding: 20px;">
+                        <img class="col-md-12 col-sm-12 col-xs-12" alt="About-VR-LOGO" border="10" src="http://www.varinderrangi.com/client/img/punjabInsuranceAbout.JPG"
+                        />
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-4" style="padding: 20px;">
+                        <img class="col-md-12 col-sm-12 col-xs-12" alt="About-VR-LOGO" border="10" src="http://www.varinderrangi.com/client/img/varinderRangi.jpg"
+                        />
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-8" style="padding: 20px;color: white;">
+                        <h5 class="head-small">About VARINDER RANGI</h5>
+                        <p>
+                            VARINDER RANGI is a competent certified Insurance Adviser who can provide you specialized and excellent steerage and recommendations
+                            for Super-Visa, Life and all other insurance related needs.
+                        </p>
+                        <p>
+                            Out of the numerous merchandise available in the market, an Expert Insurance Broker is a necessity to having a brief and
+                            efficient plan to satisfy your reason.
+                        </p>
+                        <p>
+                            Having decided on Punjab Insurance, I am overtly convinced of our unmatched abilities and dedication to insure you with a
+                            best fit from our broad knowledge and experience of great range of available products.
+                        </p>
+                        <p>
+                            My goal is to provide you with the proper product knowledge which you look for in a Proficient Insurance Adviser.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- About Us Begins -->
+
+            <!-- Contact Us Begin -->
+            <div id="contactUs" class="tab-pane fade bg-grad">
+                <h1 class="head-bg tab-head">Contact Us</h1>
+                <div>
+                    <hr>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <!-- <form action="/send-email" method="post" id="form1"> -->
+                            <form method="GET" action="mailto:varinderkrangi@gmail.com" enctype="text/plain">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Name" class="form-control " name="fullName" id="fullName">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Email" class="form-control" name="email" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" placeholder="Phone No." class="form-control" name="phone" id="phone">
+                                </div>
+                                <div class="form-group">
+                                    <textarea rows="4" cols="50" placeholder="Message" class="form-control" name="message" id="message"></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <input class="btn btn-success" type="submit" value="Get Quote" />
+                                    <!-- <button class="btn btn-success" id="quoteBtn" type="submit" value="Send" >Get Quote</button> -->
+                                    <input type="hidden" name="body" />
+                                </div>
+                                <div style="padding-bottom: 10px;"></div>
+
+                            </form>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12 head-size" style="text-align: center">
+                            <div>
+                                <span style="color: white">You can call us on:
+                                    <br>
+                                </span>
+                            </div>
+                            <div>
+                                <span id="contactNumber" class="font-italic">
+                                    <a style="color: white" href="tel:+1 416 684 5000">+1 416 684 5000</a>
+                                </span>
+                            </div>
+
+                            <div style="color: white">
+                                -OR-
+                            </div>
+
+                            <div>
+                                <span style="color: white">Email us at:
+                                    <br>
+                                </span>
+                            </div>
+                            <div>
+                                <span id="emailId" class="font-italic">
+                                    <a style="color: white" href="mailto:varinderkrangi@gmail.com">varinderkrangi@gmail.com</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="padding-bottom: 10px"></div>
+                </div>
+            </div>
+            <!-- Contact us ends -->
+
+        </div>
+        <div class="container-fluid gradFour">
+            <div class="container">
+                <div class="row" id="footerID">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h3 class="head-size" style="color: white">Services We Offer:</h3>
+                        <ul style="color: white" class="text-size">
+                            <li>Super Visa Insurance</li>
+                            <li>Critical Illness Insurance</li>
+                            <li>Health & Dental Insurance</li>
+                            <li>Life Insurance</li>
+                            <li>Travel Insurance</li>
+                            <li>Visitor Health Insurance</li>
+                            <li>RESP</li>
+                            <li>RRSP</li>
+                            <li>TFSA</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <h3 class="head-size" style="color: white">Connect With Us At</h3>
+                        <div class="text-size" style="padding-top: 10px">
+                            <a href="https://www.facebook.com/PunjabInsuranceVarinderRangi/  " class="fa fa-facebook"></a>
+                            <a href="https://twitter.com/rangivarinder" class="fa fa-twitter"></a>
+                            <a href="https://www.instagram.com/varinderkrangi/?hl=en  " class="fa fa-instagram"></a>
+                        </div>
+                        <hr>
+                        <div class="text-size" style="padding-top: 10px">
+                            <h3 class="head-size" style="color: white">Address:</h3>
+                            <p style="color: white">2969 Bovaird Drive East, Unit 2, Brampton, ON L6S 0C6</p>
+                        </div>
+                        <hr>
+                        <div class="text-size" style="padding-top: 10px">
+                            <h3 class="head-size" style="color: white">Contact Number:</h3>
+                            <a style="color: white" href="tel:+1 416 684 5000">+1 416 684 5000</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div style="padding-top: 15px"></div>
+
+
+
+</body>
+<!-- All scripts included in this Webpage  -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+<script src="http://www.varinderrangi.com/client/script/index.js"></script>
+<!-- <script src="/script/index.js"></script> -->
+
+</html>
