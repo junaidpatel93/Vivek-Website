@@ -13,7 +13,7 @@
     "eslint": "",
     "express": "",
     "fs-extra": "^6.0.1",
-    "http-server": "^0.11.1",
+    "http-server": "^0.11.2",
     "nodemailer": "^6.0.0",
     "nodemailer-smtp-transport": "^2.7.4",
     "npm": "^6.9.0",
